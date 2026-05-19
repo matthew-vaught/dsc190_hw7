@@ -14,7 +14,7 @@ stages:
     - src/transform.py
     outs:
     - data/transformed/events.csv
-  featurize:
+  features:
     cmd: uv run src/featurize.py data/transformed/events.csv 
       data/features/events.csv
     deps:
